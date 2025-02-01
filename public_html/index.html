@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Experience authentic Ethiopian coffee culture and travel services at Coffee & Travel Café. Your gateway to Ethiopian coffee and adventures.">
+    <meta name="author" content="Coffee & Travel Café">
+    <title>Coffee & Travel Café | Experience Ethiopian Coffee and Culture</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        .animate-fadeInUp {
+            animation: fadeInUp 1s ease-out;
+        }
+        .animate-slideIn {
+            animation: slideIn 1s ease-out;
+        }
+        .scroll-trigger {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+        .scroll-trigger.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-transparent backdrop-blur-sm z-50 transition-all duration-500">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-bold text-white hover:scale-105 transition-transform">Coffee & Travel</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-white hover:text-gray-300 hover:scale-110 transition-all">Home</a>
+                    <a href="#about" class="text-white hover:text-gray-300 hover:scale-110 transition-all">About</a>
+                    <a href="#menu" class="text-white hover:text-gray-300 hover:scale-110 transition-all">Coffee & Menu</a>
+                    <a href="#book-table" class="text-white hover:text-gray-300 hover:scale-110 transition-all">Book Table</a>
+                    <a href="#events" class="text-white hover:text-gray-300 hover:scale-110 transition-all">Events & Travel</a>
+                    <a href="#contact" class="text-white hover:text-gray-300 hover:scale-110 transition-all">Contact</a>
+                </div>
+                <button class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="home" class="relative h-screen bg-cover bg-center" style="background-image: url('https://insanelygoodrecipes.com/wp-content/uploads/2020/07/Cup-Of-Creamy-Coffee.png');">
+        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="absolute inset-0 flex items-center justify-center text-center">
+            <div class="text-white px-4" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="text-5xl md:text-6xl font-bold mb-4 animate-fadeInUp">Coffee & Travel Café</h1>
+                <h2 class="text-3xl md:text-4xl mb-8 animate-fadeInUp" style="animation-delay: 0.3s">Experience Ethiopian Coffee & Culture</h2>
+                <a href="#menu" class="bg-brown-600 hover:bg-brown-700 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 hover:scale-110 animate-fadeInUp" style="animation-delay: 0.6s">
+                    Explore Our Menu
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="h-96 bg-cover bg-center rounded-lg transform hover:scale-105 transition-transform duration-500" 
+                     style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzS8UbkPlRtDkOfJdRQ4P_d3uGN4hQuMhTfA&s');"
+                     data-aos="fade-right">
+                </div>
+                <div data-aos="fade-left">
+                    <h2 class="text-4xl font-bold mb-6">Welcome to Coffee & Travel Café</h2>
+                    <p class="text-gray-600 mb-4">Welcome to Coffee & Travel Café, where we blend the rich flavors of Ethiopian coffee with the spirit of adventure. Our café is a cultural hub where coffee lovers and travelers unite, sharing stories over a cup of perfectly brewed Ethiopian coffee.</p>
+                    <p class="text-gray-600 mb-4">As the birthplace of coffee, Ethiopia offers an unparalleled coffee experience. Our café celebrates this heritage while providing expert travel guidance for those wanting to explore this beautiful country.</p>
+                    <p class="font-bold text-gray-800 mb-4">Our mission is to create a cultural hub where coffee lovers and travelers can connect over premium Ethiopian coffee while discovering the beauty of Ethiopia.</p>
+                    <p class="text-gray-600">Whether you're a local looking for a cozy spot to enjoy authentic Ethiopian coffee or a traveler seeking guidance for your next journey, we are here to make every experience memorable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">Our Menu</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="group relative overflow-hidden rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/imgs/gallary-1.jpg" alt="Traditional Ethiopian Coffee" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
+                        <h3 class="text-white text-xl font-bold transform translate-y-full group-hover:translate-y-0 transition duration-500">Traditional Ethiopian Coffee</h3>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/imgs/gallary-2.jpg" alt="Specialty Coffee" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
+                        <h3 class="text-white text-xl font-bold transform translate-y-full group-hover:translate-y-0 transition duration-500">Specialty Coffee</h3>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg" data-aos="fade-up" data-aos-delay="300">
+                    <img src="assets/imgs/gallary-3.jpg" alt="Ethiopian Snacks" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
+                        <h3 class="text-white text-xl font-bold transform translate-y-full group-hover:translate-y-0 transition duration-500">Ethiopian Snacks</h3>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg" data-aos="fade-up" data-aos-delay="400">
+                    <img src="assets/imgs/gallary-4.jpg" alt="International Pastries" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
+                        <h3 class="text-white text-xl font-bold transform translate-y-full group-hover:translate-y-0 transition duration-500">International Pastries</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book a Table Section -->
+    <section id="book-table" class="py-20 bg-cover bg-center relative" style="background-image: url('assets/imgs/book-table-img.jpg');">
+        <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+        <div class="relative max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-white mb-12" data-aos="fade-up">Reserve Your Experience</h2>
+            <div class="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-8">
+                <input type="email" placeholder="Email" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-brown-600 transform hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="100">
+                <input type="number" placeholder="Number of Guests" min="1" max="20" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-brown-600 transform hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="200">
+                <input type="time" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-brown-600 transform hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="300">
+                <input type="date" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-brown-600 transform hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="400">
+            </div>
+            <button class="bg-brown-600 hover:bg-brown-700 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 hover:scale-110" data-aos="fade-up" data-aos-delay="500">
+                Book Now
+            </button>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">Events & Experiences</h2>
+            <div class="flex justify-center mb-12" data-aos="fade-up">
+                <div class="inline-flex rounded-md shadow-sm" role="group">
+                    <button type="button" class="px-6 py-2 text-sm font-medium bg-brown-600 text-white rounded-l-lg transition-all hover:scale-105">Coffee</button>
+                    <button type="button" class="px-6 py-2 text-sm font-medium bg-gray-800 text-gray-300 rounded-r-lg hover:bg-brown-600 hover:text-white transition-all hover:scale-105">Travel</button>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-800 rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <img src="assets/imgs/blog-1.jpg" alt="Coffee Tasting" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-4">Traditional Coffee Ceremony</h3>
+                        <p class="text-gray-400">Experience the authentic Ethiopian coffee ceremony, from roasting to serving. Learn about the cultural significance and traditions.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <img src="assets/imgs/blog-2.jpg" alt="Coffee Workshop" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-4">Coffee Brewing Workshop</h3>
+                        <p class="text-gray-400">Join our expert baristas to learn different brewing methods and techniques for preparing the perfect cup of Ethiopian coffee.</p>
+                    </div>
+                </div>
+                <div class="bg-gray-800 rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <img src="assets/imgs/blog-3.jpg" alt="Cultural Night" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-4">Cultural Storytelling Night</h3>
+                        <p class="text-gray-400">Immerse yourself in Ethiopian culture through traditional storytelling, music, and coffee tasting sessions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="h-96 bg-gray-200 rounded-lg transform hover:scale-105 transition-transform duration-500" data-aos="fade-right"></div>
+                <div data-aos="fade-left">
+                    <h2 class="text-4xl font-bold mb-8">Find Us</h2>
+                    <p class="text-gray-600 mb-8">Visit us in the heart of Addis Ababa, where Ethiopian coffee culture meets modern hospitality. Our café is your gateway to authentic coffee experiences and Ethiopian adventures.</p>
+                    <div class="space-y-4">
+                        <p class="flex items-center text-gray-600 hover:translate-x-2 transition-transform"><span class="ti-location-pin mr-4"></span>Bole Road, Addis Ababa, Ethiopia</p>
+                        <p class="flex items-center text-gray-600 hover:translate-x-2 transition-transform"><span class="ti-mobile mr-4"></span>+251 (0) 911 234 567</p>
+                        <p class="flex items-center text-gray-600 hover:translate-x-2 transition-transform"><span class="ti-email mr-4"></span>info@coffeeandtravel.et</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 py-12">
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="text-xl font-bold mb-4">Email Us</h3>
+                    <p class="text-gray-400">info@coffeeandtravel.et</p>
+                </div>
+                <div class="transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="text-xl font-bold mb-4">Call Us</h3>
+                    <p class="text-gray-400">+251 (0) 911 234 567</p>
+                </div>
+                <div class="transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="text-xl font-bold mb-4">Find Us</h3>
+                    <p class="text-gray-400">Bole Road, Addis Ababa, Ethiopia</p>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 py-6 text-center text-gray-400 text-sm">
+                &copy; <script>document.write(new Date().getFullYear())</script> Coffee & Travel Café. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('bg-gray-900', 'shadow-lg');
+                nav.classList.remove('bg-transparent');
+            } else {
+                nav.classList.remove('bg-gray-900', 'shadow-lg');
+                nav.classList.add('bg-transparent');
+            }
+        });
+    </script>
+</body>
+</html>
