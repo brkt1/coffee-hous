@@ -167,161 +167,295 @@
         </div>
     </section>
 
-    <!-- Menu Section -->
-    <section id="menu" class="py-20 bg-gray-100">
-        <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">Our Menu</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <div class="group relative overflow-hidden rounded-lg" data-aos="fade-up" data-aos-delay="100">
-                    <img src="assets/imgs/gallary-1.jpg" alt="Traditional Ethiopian Coffee" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
-                        <h3 class="text-white text-xl font-bold transform translate-y-full group-hover:translate-y-0 transition duration-500">Traditional Ethiopian Coffee</h3>
-                    </div>
-                </div>
-                <div class="group relative overflow-hidden rounded-lg" data-aos="fade-up" data-aos-delay="200">
-                    <img src="assets/imgs/gallary-2.jpg" alt="Specialty Coffee" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
-                        <h3 class="text-white text-xl font-bold transform translate-y-full group-hover:translate-y-0 transition duration-500">Specialty Coffee</h3>
-                    </div>
-                </div>
-                <div class="group relative overflow-hidden rounded-lg" data-aos="fade-up" data-aos-delay="300">
-                    <img src="assets/imgs/gallary-3.jpg" alt="Ethiopian Snacks" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
-                        <h3 class="text-white text-xl font-bold transform translate-y-full group-hover:translate-y-0 transition duration-500">Ethiopian Snacks</h3>
-                    </div>
-                </div>
-                <div class="group relative overflow-hidden rounded-lg" data-aos="fade-up" data-aos-delay="400">
-                    <img src="assets/imgs/gallary-4.jpg" alt="International Pastries" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
-                    <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-500 flex items-center justify-center">
-                        <h3 class="text-white text-xl font-bold transform translate-y-full group-hover:translate-y-0 transition duration-500">International Pastries</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Book a Table Section -->
-    <section id="book-table" class="py-20 bg-cover bg-center relative" style="background-image: url('assets/imgs/book-table-img.jpg');">
-        <div class="absolute inset-0 bg-black bg-opacity-70"></div>
-        <div class="relative max-w-7xl mx-auto px-4 text-center">
-            <h2 class="text-4xl font-bold text-white mb-12" data-aos="fade-up">Reserve Your Experience</h2>
-            <div class="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-8">
-                <label for="email" class="sr-only">Email</label>
-                <input type="email" id="email" placeholder="Email" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-brown-600 transform hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="100">
-                <label for="guests" class="sr-only">Number of Guests</label>
-                <input type="number" id="guests" placeholder="Number of Guests" min="1" max="20" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-brown-600 transform hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="200">
-                <label for="time" class="sr-only">Time</label>
-                <input type="time" id="time" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-brown-600 transform hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="300">
-                <label for="date" class="sr-only">Date</label>
-                <input type="date" id="date" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-brown-600 transform hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="400">
-            </div>
-            <button class="bg-brown-600 hover:bg-brown-700 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 hover:scale-110" data-aos="fade-up" data-aos-delay="500">
-                Book Now
-            </button>
-        </div>
-    </section>
-
-    <!-- Events Section -->
-    <section id="events" class="py-20 bg-gray-900 text-white">
-        <div class="max-w-7xl mx-auto px-4">
-            <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">Events & Experiences</h2>
-            <div class="flex justify-center mb-12" data-aos="fade-up">
-                <div class="inline-flex rounded-md shadow-sm" role="group">
-                    <button type="button" class="px-6 py-2 text-sm font-medium bg-brown-600 text-white rounded-l-lg transition-all hover:scale-105">Coffee</button>
-                    <button type="button" class="px-6 py-2 text-sm font-medium bg-gray-800 text-gray-300 rounded-r-lg hover:bg-brown-600 hover:text-white transition-all hover:scale-105">Travel</button>
-                </div>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gray-800 rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
-                    <img src="assets/imgs/blog-1.jpg" alt="Coffee Tasting" class="w-full h-48 object-cover">
+    <section class="py-16 bg-white" id="blog">
+        <div class="container mx-auto px-4">
+           <h2 class="text-3xl font-bold text-center mb-8">Experience Ethiopia Blog</h2>
+     
+           <!-- Filtering Section -->
+           <div class="flex justify-center space-x-4 mb-8">
+              <button class="filter-btn px-4 py-2 rounded-full bg-yellow-600 text-white hover:bg-yellow-700" data-filter="all">All</button>
+              <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 text-gray-800 hover:bg-gray-300" data-filter="travel">Travel</button>
+              <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 text-gray-800 hover:bg-gray-300" data-filter="coffee">Coffee</button>
+              <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 text-gray-800 hover:bg-gray-300" data-filter="culture">Culture</button>
+           </div>
+     
+           <!-- Blog Posts Carousel -->
+           <div class="overflow-x-auto scrollbar-hide">
+              <div class="flex space-x-8 pb-4">
+                 <!-- Blog Post 1 -->
+                 <div class="blog-post bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 min-w-[300px]" data-category="travel">
+                    <img alt="A vibrant street scene in Addis Ababa with colorful buildings and bustling activity" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/nqhtFfLK3jOUX-h4b7Th6fUhgRMj5TvYFN41FUJLhGE.jpg" width="400"/>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-4">Traditional Coffee Ceremony</h3>
-                        <p class="text-gray-400">Experience the authentic Ethiopian coffee ceremony, from roasting to serving. Learn about the cultural significance and traditions.</p>
+                       <h3 class="text-xl font-bold mb-2">Exploring Addis Ababa</h3>
+                       <p class="text-gray-700 mb-4">A traveler's journey through the vibrant streets of Addis Ababa.</p>
+                       <div class="flex items-center">
+                          <img alt="Portrait of John Doe, a travel enthusiast" class="w-10 h-10 rounded-full mr-3" height="100" src="https://storage.googleapis.com/a1aa/image/y6xHIIoZVzz1gxCib0bctX7GGKyn7qrZmuc6gzPf_WQ.jpg" width="100"/>
+                          <div>
+                             <p class="text-sm font-semibold text-gray-800">John Doe</p>
+                             <p class="text-xs text-gray-500">Travel Enthusiast</p>
+                          </div>
+                       </div>
+                       <a class="mt-4 inline-block text-yellow-600 hover:text-yellow-700" href="#">Read More →</a>
                     </div>
-                </div>
-                <div class="bg-gray-800 rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
-                    <img src="assets/imgs/blog-2.jpg" alt="Coffee Workshop" class="w-full h-48 object-cover">
+                 </div>
+                 
+     
+                 <!-- Blog Post 2 -->
+                 <div class="blog-post bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 min-w-[300px]" data-category="coffee">
+                    <img alt="A traditional Ethiopian coffee ceremony setup with coffee beans and a jebena" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/O9RY1gYaKIewdnzZG1ihShaF1lQemx1iKWnwnQZ8hn4.jpg" width="400"/>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-4">Coffee Brewing Workshop</h3>
-                        <p class="text-gray-400">Join our expert baristas to learn different brewing methods and techniques for preparing the perfect cup of Ethiopian coffee.</p>
+                       <h3 class="text-xl font-bold mb-2">Traditional Coffee Ceremony</h3>
+                       <p class="text-gray-700 mb-4">Discover the art of Ethiopian coffee brewing.</p>
+                       <div class="flex items-center">
+                          <img alt="Portrait of Jane Smith, a coffee expert" class="w-10 h-10 rounded-full mr-3" height="100" src="https://storage.googleapis.com/a1aa/image/bHe_JlJbQ7Rfiib9TtKZqrQtoFf7acZeOF5Dc4G3Fco.jpg" width="100"/>
+                          <div>
+                             <p class="text-sm font-semibold text-gray-800">Jane Smith</p>
+                             <p class="text-xs text-gray-500">Coffee Expert</p>
+                          </div>
+                       </div>
+                       <a class="mt-4 inline-block text-yellow-600 hover:text-yellow-700" href="#">Read More →</a>
                     </div>
-                </div>
-                <div class="bg-gray-800 rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
-                    <img src="assets/imgs/blog-3.jpg" alt="Cultural Night" class="w-full h-48 object-cover">
+                 </div>
+     
+                 <!-- Blog Post 3 -->
+                 <div class="blog-post bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300 min-w-[300px]" data-category="culture">
+                    <img alt="A colorful festival scene in Ethiopia with traditional attire and dancing" class="w-full h-48 object-cover" height="300" src="https://storage.googleapis.com/a1aa/image/b89VvHAISV4FunuE0MpI0gUrOjXLg-DuRQgumjOfts4.jpg" width="400"/>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold mb-4">Cultural Storytelling Night</h3>
-                        <p class="text-gray-400">Immerse yourself in Ethiopian culture through traditional storytelling, music, and coffee tasting sessions.</p>
+                       <h3 class="text-xl font-bold mb-2">Festivals of Ethiopia</h3>
+                       <p class="text-gray-700 mb-4">Celebrating the rich cultural festivals of Ethiopia.</p>
+                       <div class="flex items-center">
+                          <img alt="Portrait of Michael Johnson, a cultural blogger" class="w-10 h-10 rounded-full mr-3" height="100" src="https://storage.googleapis.com/a1aa/image/iiBKV6T2IvnYEV9kWxIAnOBS4gqrCK9r0GxUQYO3qi4.jpg" width="100"/>
+                          <div>
+                             <p class="text-sm font-semibold text-gray-800">Michael Johnson</p>
+                             <p class="text -xs text-gray-500">Cultural Blogger</p>
+                          </div>
+                       </div>
+                       <a class="mt-4 inline-block text-yellow-600 hover:text-yellow-700" href="#">Read More →</a>
                     </div>
-                </div>
-            </div>
+                 </div>
+              </div>
+           </div>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-12">
-                <div class="h-96 bg-gray-200 rounded-lg transform hover:scale-105 transition-transform duration-500" data-aos="fade-right"></div>
-                <div data-aos="fade-left">
-                    <h2 class="text-4xl font-bold mb-8">Find Us</h2>
-                    <p class="text-gray-600 mb-8">Visit us in the heart of Addis Ababa, where Ethiopian coffee culture meets modern hospitality. Our café is your gateway to authentic coffee experiences and Ethiopian adventures.</p>
-                    <div class="space-y-4">
-                        <p class="flex items-center text-gray-600 hover:translate-x-2 transition-transform"><span class="ti-location-pin mr-4"></span>Bole Road, Addis Ababa, Ethiopia</p>
-                        <p class="flex items-center text-gray-600 hover:translate-x-2 transition-transform"><span class="ti-mobile mr-4"></span>+251 (0) 911 234 567</p>
-                        <p class="flex items-center text-gray-600 hover:translate-x-2 transition-transform"><span class="ti-email mr-4"></span>info@coffeeandtravel.et</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 py-12">
-            <div class="grid md:grid-cols-3 gap-8 text-center">
-                <div class="transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
-                    <h3 class="text-xl font-bold mb-4">Email Us</h3>
-                    <p class="text-gray-400">info@coffeeandtravel.et</p>
-                </div>
-                <div class="transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
-                    <h3 class="text-xl font-bold mb-4">Call Us</h3>
-                    <p class="text-gray-400">+251 (0) 911 234 567</p>
-                </div>
-                <div class="transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
-                    <h3 class="text-xl font-bold mb-4">Find Us</h3>
-                    <p class="text-gray-400">Bole Road, Addis Ababa, Ethiopia</p>
-                </div>
-            </div>
-        </div>
-        <div class="border-t border-gray-800">
-            <div class="max-w-7xl mx-auto px-4 py-6 text-center text-gray-400 text-sm">
-                &copy; <script>document.write(new Date().getFullYear())</script> Coffee & Travel Café. All rights reserved.
-            </div>
-        </div>
-    </footer>
-
-    <!-- AOS JS -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        // Initialize AOS
-        AOS.init({
-            duration: 1000,
-            once: true,
-            offset: 100
+     </section>
+     
+     <script>
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const blogPosts = document.querySelectorAll('.blog-post');
+     
+        filterButtons.forEach(button => {
+           button.addEventListener('click', () => {
+              const filter = button.getAttribute('data-filter');
+     
+              blogPosts.forEach(post => {
+                 if (filter === 'all' || post.getAttribute('data-category') === filter) {
+                    post.style.display = 'block';
+                 } else {
+                    post.style.display = 'none';
+                 }
+              });
+           });
         });
+     </script>
+     <!-- Menu Section -->
+<section id="menu" class="py-20 bg-gray-100">
+    <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">Our Menu</h2>
 
-        // Navbar scroll effect
-        window.addEventListener('scroll', function() {
-            const nav = document.querySelector('nav');
-            if (window.scrollY > 50) {
-                nav.classList.add('bg-gray-900', 'shadow-lg');
-                nav.classList.remove('bg-transparent');
-            } else {
-                nav.classList.remove('bg-gray-900', 'shadow-lg');
-                nav.classList.add('bg-transparent');
-            }
+        <!-- Filtering Section -->
+        <div class="flex justify-center space-x-4 mb-8">
+            <button class="filter-btn px-4 py-2 rounded-full bg-yellow-600 text-white hover:bg-yellow-700" data-filter="all">All</button>
+            <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 text-gray-800 hover:bg-gray-300" data-filter="coffee">Coffee</button>
+            <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 text-gray-800 hover:bg-gray-300" data-filter="snacks">Snacks</button>
+            <button class="filter-btn px-4 py-2 rounded-full bg-gray-200 text-gray-800 hover:bg-gray-300" data-filter="pastries">Pastries</button>
+        </div>
+
+        <!-- Menu Items Grid -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Menu Item 1: Traditional Ethiopian Coffee -->
+            <div class="group relative overflow-hidden rounded-lg bg-white shadow-lg" data-aos="fade-up" data-aos-delay="100" data-category="coffee">
+                <img src="assets/imgs/gallary-1.jpg" alt="Traditional Ethiopian Coffee" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col items-center justify-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">Traditional Ethiopian Coffee</h3>
+                    <p class="text-white text-sm text-center mb-4">Experience the rich flavors of Ethiopia's finest coffee beans, brewed traditionally.</p>
+                    <p class="text-white text-lg font-semibold">$5.99</p>
+                </div>
+            </div>
+
+            <!-- Menu Item 2: Specialty Coffee -->
+            <div class="group relative overflow-hidden rounded-lg bg-white shadow-lg" data-aos="fade-up" data-aos-delay="200" data-category="coffee">
+                <img src="assets/imgs/gallary-2.jpg" alt="Specialty Coffee" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col items-center justify-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">Specialty Coffee</h3>
+                    <p class="text-white text-sm text-center mb-4">Handcrafted specialty coffee with unique blends and flavors.</p>
+                    <p class="text-white text-lg font-semibold">$6.99</p>
+                </div>
+            </div>
+
+            <!-- Menu Item 3: Ethiopian Snacks -->
+            <div class="group relative overflow-hidden rounded-lg bg-white shadow-lg" data-aos="fade-up" data-aos-delay="300" data-category="snacks">
+                <img src="assets/imgs/gallary-3.jpg" alt="Ethiopian Snacks" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col items-center justify-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">Ethiopian Snacks</h3>
+                    <p class="text-white text-sm text-center mb-4">Delicious traditional Ethiopian snacks to complement your coffee.</p>
+                    <p class="text-white text-lg font-semibold">$4.99</p>
+                </div>
+            </div>
+
+            <!-- Menu Item 4: International Pastries -->
+            <div class="group relative overflow-hidden rounded-lg bg-white shadow-lg" data-aos="fade-up" data-aos-delay="400" data-category="pastries">
+                <img src="assets/imgs/gallary-4.jpg" alt="International Pastries" class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-500 flex flex-col items-center justify-center p-4">
+                    <h3 class="text-white text-xl font-bold mb-2">International Pastries</h3>
+                    <p class="text-white text-sm text-center mb-4">A selection of international pastries to satisfy your sweet tooth.</p>
+                    <p class="text-white text-lg font-semibold">$3.99</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Filtering Functionality
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const menuItems = document.querySelectorAll('[data-category]');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const filter = button.getAttribute('data-filter');
+
+            menuItems.forEach(item => {
+                if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            // Update active button style
+            filterButtons.forEach(btn => btn.classList.remove('bg-yellow-600', 'text-white'));
+            button.classList.add('bg-yellow-600', 'text-white');
         });
-    </script>
-</body>
-</html>
+    });
+</script>
+<!-- Book a Table Section -->
+<section id="book-table" class="py-20 bg-cover bg-center relative" style="background-image: url('assets/imgs/book-table-img.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+    <div class="relative max-w-7xl mx-auto px-4 text-center">
+        <h2 class="text-4xl font-bold text-white mb-12" data-aos="fade-up">Reserve Your Experience</h2>
+        <div class="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-8">
+            <label for="email" class="sr-only">Email</label>
+            <input type="email" id="email" placeholder="Email" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-brown-600 transform hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="100">
+            <label for="guests" class="sr-only">Number of Guests</label>
+            <input type="number" id="guests" placeholder="Number of Guests" min="1" max="20" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-brown-600 transform hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="200">
+            <label for="time" class="sr-only">Time</label>
+            <input type="time" id="time" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-brown-600 transform hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="300">
+            <label for="date" class="sr-only">Date</label>
+            <input type="date" id="date" class="w-full px-4 py-3 rounded-lg bg-white bg-opacity-20 text-white placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-brown-600 transform hover:scale-105 transition-transform" data-aos="fade-up" data-aos-delay="400">
+        </div>
+        <button class="bg-brown-600 hover:bg-brown-700 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 hover:scale-110" data-aos="fade-up" data-aos-delay="500">
+            Book Now
+        </button>
+    </div>
+</section>
 
+<!-- Events Section -->
+<section id="events" class="py-20 bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-12" data-aos="fade-up">Events & Experiences</h2>
+        <div class="flex justify-center mb-12" data-aos="fade-up">
+            <div class="inline-flex rounded-md shadow-sm" role="group">
+                <button type="button" class="px-6 py-2 text-sm font-medium bg-brown-600 text-white rounded-l-lg transition-all hover:scale-105">Coffee</button>
+                <button type="button" class="px-6 py-2 text-sm font-medium bg-gray-800 text-gray-300 rounded-r-lg hover:bg-brown-600 hover:text-white transition-all hover:scale-105">Travel</button>
+            </div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-gray-800 rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                <img src="assets/imgs/blog-1.jpg" alt="Coffee Tasting" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-4">Traditional Coffee Ceremony</h3>
+                    <p class="text-gray-400">Experience the authentic Ethiopian coffee ceremony, from roasting to serving. Learn about the cultural significance and traditions.</p>
+                </div>
+            </div>
+            <div class="bg-gray-800 rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                <img src="assets/imgs/blog-2.jpg" alt="Coffee Workshop" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-4">Coffee Brewing Workshop</h3>
+                    <p class="text-gray-400">Join our expert baristas to learn different brewing methods and techniques for preparing the perfect cup of Ethiopian coffee.</p>
+                </div>
+            </div>
+            <div class="bg-gray-800 rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                <img src="assets/imgs/blog-3.jpg" alt="Cultural Night" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold mb-4">Cultural Storytelling Night</h3>
+                    <p class="text-gray-400">Immerse yourself in Ethiopian culture through traditional storytelling, music, and coffee tasting sessions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="h-96 bg-gray-200 rounded-lg transform hover:scale-105 transition-transform duration-500" data-aos="fade-right"></div>
+            <div data-aos="fade-left">
+                <h2 class="text-4xl font-bold mb-8">Find Us</h2>
+                <p class="text-gray-600 mb-8">Visit us in the heart of Addis Ababa, where Ethiopian coffee culture meets modern hospitality. Our café is your gateway to authentic coffee experiences and Ethiopian adventures.</p>
+                <div class="space-y-4">
+                    <p class="flex items-center text-gray-600 hover:translate-x-2 transition-transform"><span class="ti-location-pin mr-4"></span>Bole Road, Addis Ababa, Ethiopia</p>
+                    <p class="flex items-center text-gray-600 hover:translate-x-2 transition-transform"><span class="ti-mobile mr-4"></span>+251 (0) 911 234 567</p>
+                    <p class="flex items-center text-gray-600 hover:translate-x-2 transition-transform"><span class="ti-email mr-4"></span>info@coffeeandtravel.et</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white">
+    <div class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+            <div class="transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-xl font-bold mb-4">Email Us</h3>
+                <p class="text-gray-400">info@coffeeandtravel.et</p>
+            </div>
+            <div class="transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-xl font-bold mb-4">Call Us</h3>
+                <p class="text-gray-400">+251 (0) 911 234 567</p>
+            </div>
+            <div class="transform hover:scale-105 transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                <h3 class="text-xl font-bold mb-4">Find Us</h3>
+                <p class="text-gray-400">Bole Road, Addis Ababa, Ethiopia</p>
+            </div>
+        </div>
+    </div>
+    <div class="border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 py-6 text-center text-gray-400 text-sm">
+            &copy; <script>document.write(new Date().getFullYear())</script> Coffee & Travel Café. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // Initialize AOS
+    AOS.init({
+        duration: 1000,
+        once: true,
+        offset: 100
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', function() {
+        const nav = document.querySelector('nav');
+        if (window.scrollY > 50) {
+            nav.classList.add('bg-gray-900', 'shadow-lg');
+            nav.classList.remove('bg-transparent');
+        } else {
+            nav.classList.remove('bg-gray-900', 'shadow-lg');
+            nav.classList.add('bg-transparent');
+        }
+    });
+</script>
